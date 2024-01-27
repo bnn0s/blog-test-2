@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:1337";
+const BASE_URL = "https://test-back-w461.onrender.com";
 
 const getPost = axios.get(BASE_URL + "/api" + "/test1s?populate=*");
 const getPostById = (id: any) =>
