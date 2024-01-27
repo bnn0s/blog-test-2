@@ -1,4 +1,3 @@
-import React from "react";
 import GlobalApi from "../Services/GlobalApi";
 import { useNavigate } from "react-router-dom";
 function Blogs({ posts }: any) {

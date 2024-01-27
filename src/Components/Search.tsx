@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import hat from "./../assets/Images/hat.png";
 import { IoSearch } from "react-icons/io5";

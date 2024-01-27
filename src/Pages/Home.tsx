@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Search from "../Components/Search";
 import IntroPost from "../Components/IntroPost";
-import Header from "../Components/Header";
+
 import Blogs from "../Components/Blogs";
 import Footer from "../Components/Footer";
 import GlobalApi from "../Services/GlobalApi";
