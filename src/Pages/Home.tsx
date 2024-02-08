@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Search from "../Components/Search";
 import IntroPost from "../Components/IntroPost";
-
+import Bcard from "../Components/Bcard";
 import Blogs from "../Components/Blogs";
 import Footer from "../Components/Footer";
 import GlobalApi from "../Services/GlobalApi";
@@ -46,10 +46,12 @@ function Home() {
   };
   return (
     <div>
-      <Search selectedTag={(tag) => filterPost(tag)} />
-      {post.length > 0 ? <IntroPost post={post[0]} /> : null}
-      {post.length > 0 ? <Blogs posts={post} /> : null}
-      <Footer />
+      {/* <Search selectedTag={(tag) => filterPost(tag)} /> */}
+      <div className="relative h-[50px]">
+        {post.length > 0 ? <IntroPost className=" " post={post[0]} /> : null}
+        {post.length > 0 ? <Blogs posts={post} /> : null}
+      </div>
+      {/* <Footer /> */}
     </div>
   );
 }
